@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Irritation</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hind:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient layers -->
+  <div class="sky"></div>
+  <div class="fog fog-1"></div>
+  <div class="fog fog-2"></div>
+  <canvas id="rain-canvas"></canvas>
+  <div id="fireflies"></div>
+  <div id="hearts"></div>
+
+  <!-- Music -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <button id="music-toggle" aria-label="Music play or pause" aria-pressed="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <!-- Main content -->
+  <main class="stage">
+
+    <header class="title-block">
+      <p class="eyebrow">एक कहानी, जो कभी कही नहीं गई</p>
+      <h1 class="title">Irritation</h1>
+      <div class="title-underline"></div>
+    </header>
+
+    <section class="story-wrap">
+      <article class="glass-card story-card" id="story-content">
+        <p>इसमें उसकी यादें हैं...पछतावा है...or adhurapan है...किसी ऐसे इंसान की कमी है...जो कभी मेरी ज़िंदगी का बड़ा हिस्सा था. 😒</p>
+
+        <p>Dil की बात किसी को बतानी थी... सुनने वाला कोई nahi hai... रात में.. Insta khola...किसी के इतजार में...शायद मेरे कहने पे vo ऑनलाइन aa जाये.. फिर yaad आया की.. वो to nahi आने वाली.... मोबाइल side kiya और सोने की कोशिश की..🥺</p>
+
+        <p>तुम्हारे sath.. 🥺दारू पीना tha... Apne style me..सपना ही रह गया...vo हल्दी or शहद का test आज भी मुझे yaad hai.. ☺️</p>
+
+        <p>Jab tum पहले कपडे धोती थी.. बीमार padi.. to मन kiya मैं aakar तुम्हरी help कर दूँ... मैं खुद भी thik नहीं था...फिर भी किसी तरह तुम्हारे pass आना चाहता था... बस तुम्हारी permission चाहिए थी..फिर yaad आया... एक बार tumhari गली तक आया था...लेकिन तुम मिलने नहीं आई थीं..☺️</p>
+
+        <p>तुम्हारे साथ..दुबारा...उस घास वाले मैदान में फिर से बैठने का मन करता है...🥺 वो dog जों तुम्हारे पैरों में जा के सो जाता tha....जिसके लिए तुम रो रही थी... जब vo नहीं बच पाया था.. Tumko रोते देखा था... आज भी लगता है...काश तुम्हारे लिए कुछ कर पाता...तुम्हारे लिए...खरीद लेता उस dog को /लड़ लेता उसके मालिक से... Nahi कर पाया अफ़सोस होता hai...</p>
+
+        <figure class="memory-frame">
+          <img src="dog-memory.jpg" alt="वो dog, घास पर सोता हुआ" loading="lazy">
+          <figcaption>उसी घास वाले मैदान की एक याद 🐾</figcaption>
+        </figure>
+
+        <p>वो एक cold drink..को साथ में पीना.... mujh se नाराज़ होकर भी  तुम्हारा मुझे खाना खिलाना...or वो घंटों बातें karna... सब kuch yaad आता hai...☺️ दुबारा से. उसी सपनों की दुनिया में जाना चाहता hun... But nind ही उड़ गई है...वही मेरी दुनिया थीं.😂</p>
+
+        <figure class="memory-frame">
+          <img src="apple-memory.jpg" alt="वो साथ खाया हुआ खाना" loading="lazy">
+          <figcaption>तुम्हारे हाथ से खिलाया हुआ 🍎</figcaption>
+        </figure>
+
+        <p>Proper एक स्पेशल day tha...Sunday... वो सिर्फ़ एक दिन नहीं था... हमारा दिन था... सब काम छोड़ के.. दोनो एक साथ. Time spend करतें थे...😮‍💨 अब वो दिन किसी को yaad नहीं..</p>
+
+        <p>वो tumhari Calls..जब मोबाइल तुम्हारे beg में on छोड़ जाती.... ऐसा लगता था... जैसे तुम मुझे अपने साथ हर जगह ले जाती हो...School..Class.. Church... तुम कितनी Busy रहती थीं... फिर भी kabhi feel नहीं होने दिया कि...मैं tum se दूर hun...☺️</p>
+
+        <p>वो खोई हुई Lipstick...मुझे लगा दिखाने के लिए तुम उसे kaise ढूंढ रही थी... तुमने use ढूढा.. Or लगा के dikhaya....वो Black Dress one pice... Or... Black साड़ी..... उसमे तुम बहुत अच्छी लग रही थी मुझे....आज भी याद hai...शायद वो last time tha जब तुमको देखा tha.... ☺️</p>
+
+        <p>मैंने एक बार तुमसे कहा tha मैं शादी के बाद भी loyal रहूँगा.. Nahi हो पायेगा मेरे से.. आज समझ आया... कुछ वादे वक्त से हार जाते हैं... 🥺</p>
+
+        <p>मुझे पता hai.. की kuch भी nahi हो सकता... वो हक मैं बहुत पहले खो चुका हूँ.. 🙂....दूरिया roj बढ़ रही hai... मैं दूर होता जा रहा हूं.. खुद से.. जहाँ मैं... मैं..nahi हूं... 🥺</p>
+
+        <p>aaj भी तेरी हर याद संभाल रखी है...may be तुम्हारे पास मेरी एक तस्वीर भी न हो..🙂</p>
+
+        <p>फ़र्क बस इतना है...<br>
+        मैंने gujre हुए लम्हों को jindgi बना लिया..or.tum ne उन्हें बीता हुआ वक़्त समझकर छोड़ दिया... 😔</p>
+
+        <p>जो मेरे लिए Golden Days हैं...उसके लिए आज Irritation.🥺</p>
+      </article>
+    </section>
+
+    <section class="ending-wrap">
+      <div class="glass-card ending-card">
+        <p class="ending-line">कुछ कहानियाँ खत्म नहीं होतीं...</p>
+        <p class="ending-line ending-line-2">वो सिर्फ रुक जाती हैं, किसी मोड़ पर।</p>
+        <div class="ending-heart">💔</div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <p>बनाया गया उन शब्दों के लिए, जो कभी कहे नहीं जा सके</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
